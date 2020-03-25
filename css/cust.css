@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script:400);
+.separuh{
+	  font-family: 'Kaushan Script', handwriting;
+
+}
+.typewrite{
+    font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+   
+  color: #FFB654;
+  z-index: 2;
+}
+.object-fit_cover { object-fit: cover }
+
+
+/* Profile Image Style */
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+.cc-profile-image a {
+  position: relative;
+}
+
+.cc-profile-image a:before {
+  content: "";
+  border: 50px solid #ee4540;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  margin-top: 15px;
+  -webkit-animation: pulsate 1.6s ease-out;
+          animation: pulsate 1.6s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0.0;
+  z-index: 1;
+}
+
+.cc-profile-image img {
+  position: relative;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  z-index: 2;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.cc-profile-image a:hover img {
+  -webkit-transform: scale(1.06, 1.06);
+          transform: scale(1.06, 1.06);
+}
+
+.cc-profile-image a:hover:before {
+  -webkit-animation: none;
+          animation: none;
+}
